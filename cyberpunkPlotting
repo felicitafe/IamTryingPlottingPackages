@@ -1,1 +1,25 @@
 # In this file I am trying mplcyberpunk package
+
+pip install mplcyberpunk
+import matplotlib.pyplot as plt
+import mplcyberpunk
+
+
+plt.style.use("cyberpunk")
+
+plt.plot([1, 3, 9, 5, 2, 1, 1], marker='o')
+plt.plot([4, 5, 5, 7, 9, 8, 6], marker='o')
+
+mplcyberpunk.add_glow_effects()
+
+plt.show()
+
+
+# codes below did not work
+
+mplcyberpunk.make_lines_glow()
+mplcyberpunk.add_underglow()
+plt.show()
+
+fig, ax = plt.subplots()
+mplcyberpunk.make_lines_glow(ax)
